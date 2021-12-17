@@ -211,8 +211,8 @@ class U_Net_DeepSup(nn.Module):
 
         self.Conv = nn.Conv3d(filters[0], out_ch, kernel_size=1, stride=1, padding=0)
 
-        for submodule in self.modules():
-            submodule.register_forward_hook(self.nan_hook)
+        # for submodule in self.modules():
+        #     submodule.register_forward_hook(self.nan_hook)
 
     # self.active = torch.nn.Sigmoid()
 
